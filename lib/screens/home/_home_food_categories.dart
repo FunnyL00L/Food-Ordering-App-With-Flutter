@@ -10,7 +10,7 @@ class _FoodCategories extends StatelessWidget {
     return BlocBuilder<HomeBloc, HomeState>(
       builder: (context, state) {
         return Row(
-          children: state.foodCategories.take(5).map(
+          children: state.foodCategories.take(2).map(
             (category) {
               return Expanded(
                 child: GestureDetector(
@@ -19,7 +19,7 @@ class _FoodCategories extends StatelessWidget {
                     children: [
                       CircleAvatar(
                         radius: 30,
-                        backgroundColor: colorScheme.background,
+                        backgroundColor: colorScheme.surface,
                         child: Image.asset(category.imageUrl),
                       ),
                       const SizedBox(height: 8.0),

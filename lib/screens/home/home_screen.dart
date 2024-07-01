@@ -1,3 +1,5 @@
+// ignore_for_file: unused_import
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -7,11 +9,11 @@ import '../../shared/widgets/rating_modal.dart';
 import '../../shared/widgets/restaurant_preview_card.dart';
 import '../../shared/widgets/section_title.dart';
 import '../../state/home/home_bloc.dart';
+import '../../screens/Loader/login.dart';
 
 part '_home_app_bar.dart';
 part '_home_featured_restaurants.dart';
 part '_home_food_categories.dart';
-part '_home_popular_restaurants.dart';
 part '_home_restaurant_filters.dart';
 part '_home_shops_nearby.dart';
 
@@ -47,8 +49,7 @@ class HomeView extends StatelessWidget {
                   SizedBox(height: 16.0),
                   _RestaurantFilters(),
                   _FeaturedRestaurants(),
-                  _ShopsNearby(),
-                  _PopularRestaurants(),
+                 
                 ],
               ),
             );

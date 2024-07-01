@@ -15,8 +15,8 @@ class _FeaturedRestaurants extends StatelessWidget {
           children: [
             SectionTitle(
               title: 'Featured on Hungry',
-              action: 'See all',
-              onPressed: () {},
+              // action: 'See all',
+              // onPressed: () {},
             ),
             SizedBox(
               height: height,
@@ -33,7 +33,7 @@ class _FeaturedRestaurants extends StatelessWidget {
               ),
             ),
             Divider(
-              color: colorScheme.surfaceVariant,
+              color: colorScheme.surfaceContainerHighest,
               indent: 8.0,
               endIndent: 8.0,
             ),
