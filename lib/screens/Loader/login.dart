@@ -18,7 +18,7 @@ class LoginScreen extends StatelessWidget {
     return FlutterLogin(
       title: 'Caffe Dunia',
       onLogin: (loginData) {
-        if (loginData.name == 'admin@lord.com' && loginData.password == '1234') {
+        if (loginData.name == '' && loginData.password == '') {
           // Jika login berhasil, navigasikan ke halaman HomeScreen
           return Future.delayed(Duration(milliseconds: 500)).then((_) {
             Navigator.of(context).pushReplacement(MaterialPageRoute(
